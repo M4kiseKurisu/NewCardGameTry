@@ -16,3 +16,9 @@ MonoBehaviour:
   MouseHoverZoomInFactor: 1.2
   MouseHoverPopAnimationDuration: 0.2
   MouseHoverRecoverAnimationDuration: 0.2
+  MouseDraggingZoomInFactor: 1.3
+  MouseDraggingZoomInAnimationDuration: 0.1
+  MouseDraggingRecoverAnimationDuration: 0.2
+  CardLayoutAnimationDuration: 0.5
+  CardLayoutSpacing: -1.2
+  CardLayoutHeightOffset: 0.2
