@@ -20,5 +20,6 @@ MonoBehaviour:
   MouseDraggingZoomInAnimationDuration: 0.1
   MouseDraggingRecoverAnimationDuration: 0.2
   CardLayoutAnimationDuration: 0.5
-  CardLayoutSpacing: -1.2
+  CardDraggingOnChessBoardAlpha: 0.5
+  CardLayoutSpacing: -1.72
   CardLayoutHeightOffset: 0.2

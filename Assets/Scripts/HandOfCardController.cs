@@ -53,6 +53,13 @@ public class HandOfCardController : MonoBehaviour
         }
     }
 
+    public void RemoveCard(GameObject card) {
+        if (cardsInHand.Contains(card)) {
+            cardsInHand.Remove(card);
+            UpdateCardLayout();
+        }
+    }
+
     private float CalculateCardPositionY(int totalCardCount, int cardIndex) {
         if (totalCardCount <= 1) return 0;
         float t = ((float)cardIndex / (totalCardCount - 1)) * 2f - 1f;

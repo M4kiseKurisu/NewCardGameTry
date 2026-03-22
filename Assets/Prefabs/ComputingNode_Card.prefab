@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a93722d02f1f4f2d8870435c3b3e1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComputingNode_CardController
+  cardData: {fileID: 11400000, guid: a2848d1803e6b4611b922772fffd2341, type: 2}
 --- !u!61 &6557650371451908296
 BoxCollider2D:
   m_ObjectHideFlags: 0

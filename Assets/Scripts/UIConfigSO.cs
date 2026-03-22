@@ -21,6 +21,7 @@ public class UIConfigSO : ScriptableObject
     public float MouseDraggingZoomInAnimationDuration; // 点击手牌拖拽时卡牌放大的动画持续时间
     public float MouseDraggingRecoverAnimationDuration; // 手牌拖拽结束时卡牌恢复原状的动画持续时间
     public float CardLayoutAnimationDuration; // 洗牌过程中单张牌到达手牌指定位置的动画持续时间
+    public float CardDraggingOnChessBoardAlpha; // 当在棋盘上拖动卡牌时卡牌的透明度
     
     /* 卡牌排列相关参数 */
     public float CardLayoutSpacing; // 当牌位于手牌中时，不同牌之间的间隔参数
