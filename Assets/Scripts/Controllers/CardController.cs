@@ -85,17 +85,19 @@ public class CardController : MonoBehaviour
 
     protected void OnMouseUp() {
         isDragging = false;
-        visualChildTransform.DOScale(originalScale, UIConfigSO.Instance.MouseDraggingRecoverAnimationDuration);
-        
         SetCardTransparency(1f);
+        
         if (currentHoveredSlot != null && currentHoveredSlot.IsSlotValid()) {
             currentHoveredSlot.SetHighlight(false);
-            // todo: 卡牌出牌后的结算逻辑
+            BattleManager.Instance.chessBoard.PlaceChess(cardData, currentHoveredSlot);
             handController.RemoveCard(gameObject);
+            visualChildTransform.DOKill();
             Destroy(gameObject);
         }
-        else 
+        else {
+            visualChildTransform.DOScale(originalScale, UIConfigSO.Instance.MouseDraggingRecoverAnimationDuration);
             handController.UpdateCardLayout();
+        }
     }
     
     public void SetBaseSortingOrder(int order) {

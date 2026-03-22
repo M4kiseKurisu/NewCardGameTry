@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d1547e98ba142c892471928b6676d1, type: 3}
   m_Name: ComputingNode
   m_EditorClassIdentifier: Assembly-CSharp::CardDataSO
-  cardID: 00
+  cardID: 000
   cardName: ComputingNode
+  basePower: 6
+  chessPrefab: {fileID: 9159613508878427904, guid: 9b46cb0bd06c0439da66972f8e72ad9a, type: 3}

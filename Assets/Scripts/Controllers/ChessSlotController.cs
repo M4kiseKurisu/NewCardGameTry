@@ -12,8 +12,7 @@ public class ChessSlotController : MonoBehaviour
     }
 
     public bool IsSlotValid() {
-        // todo: 判定当前格子是否可以放对应chess
-        return true;
+        return BattleManager.Instance.chessBoard.IsSlotValid(slotX, slotY);
     }
 
     public void SetHighlight(bool show) {
